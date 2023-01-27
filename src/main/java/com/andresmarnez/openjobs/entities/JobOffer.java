@@ -1,5 +1,6 @@
 package com.andresmarnez.openjobs.entities;
 
+import com.fasterxml.jackson.databind.annotation.JsonAppend;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -12,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "job_offer")
+@Table(name = "job_offers")
 public class JobOffer {
 
 	@Id
@@ -28,10 +29,10 @@ public class JobOffer {
 	private String jobDescription;
 
 	@Column(nullable = false)
-	private LocalDateTime published_time;
+	private LocalDateTime publishedTime;
 
 	@Column(nullable = false)
-	private Integer location;
+	private String location;
 
 	@ManyToMany
 	private List<Category> tags = new ArrayList<>();
