@@ -1,18 +1,15 @@
 package com.andresmarnez.openjobs.controller;
 
-import com.andresmarnez.openjobs.entities.JobOffer;
+import com.andresmarnez.openjobs.entities.Company;
+import com.andresmarnez.openjobs.service.CompanyService;
 import com.andresmarnez.openjobs.service.JobOfferService;
+
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
-import org.springframework.http.HttpStatus;
+
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * This class is the main class for the JSON API.
@@ -22,13 +19,18 @@ import java.util.List;
 public class OpenJobsController {
 
 	private final JobOfferService jobOfferService;
+	private final CompanyService companyService;
 
-	public OpenJobsController(JobOfferService jobOfferService) {
+	public OpenJobsController(JobOfferService jobOfferService, CompanyService companyService) {
 		this.jobOfferService = jobOfferService;
+		this.companyService = companyService;
 	}
 
-	@GetMapping("/offers")
-	public List<JobOffer> getAllOffers(){
-		return jobOfferService.findActiveOffers();
+	@Operation(summary = "Get a list of the companies.")
+	@GetMapping("/companies")
+	public List<Company> getAllCompanies(){
+		return companyService.getAllCompanies();
 	}
+
+
 }

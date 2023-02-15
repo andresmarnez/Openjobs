@@ -1,33 +1,57 @@
-INSERT INTO categories (category) VALUES ('Aerospace and Aviation'),
-('Business – HR'),
-('Business – Legal'),
-('Business – Sales'),
-('Business – Support'),
-('Construction/Facilities'),
-('Emergency'),
-('Engineering – Chemical'),
-('Engineering – Civil'),
-('Engineering – Electrical'),
-('Engineering – Mechanical'),
-('Engineering – Systems'),
-('Finance'),
-('Healthcare and Science'),
-('Intelligence'),
-('IT – Data Science'),
-('IT – Database'),
-('IT – Hardware'),
-('IT – QA and Test'),
-('IT – Security'),
-('IT – Software'),
-('IT – Support'),
-('IT – Tech Writing'),
-('Linguist'),
-('Logistics'),
-('Management'),
-('Military and Law Enforcement'),
-('Security'),
-('Trainer/Instructor'),
-('Visual and Creative');
+-- CATEGORIES
+
+insert into categories (category) values ('motivating');
+insert into categories (category) values ('Right-sized');
+insert into categories (category) values ('Fully-configurable');
+insert into categories (category) values ('focus group');
+insert into categories (category) values ('array');
+insert into categories (category) values ('Integrated');
+insert into categories (category) values ('discrete');
+insert into categories (category) values ('middleware');
+insert into categories (category) values ('User-friendly');
+insert into categories (category) values ('full-range');
+insert into categories (category) values ('Future-proofed');
+insert into categories (category) values ('Graphic Interface');
+insert into categories (category) values ('help-desk');
+insert into categories (category) values ('encompassing');
+insert into categories (category) values ('multi-tasking');
+insert into categories (category) values ('Profit-focused');
+insert into categories (category) values ('time-frame');
+insert into categories (category) values ('knowledge base');
+insert into categories (category) values ('Multi-channelled');
+insert into categories (category) values ('hierarchy');
+insert into categories (category) values ('value-added');
+insert into categories (category) values ('homogeneous');
+insert into categories (category) values ('Persevering');
+insert into categories (category) values ('tertiary');
+insert into categories (category) values ('non-volatile');
+insert into categories (category) values ('projection');
+insert into categories (category) values ('Versatile');
+insert into categories (category) values ('Seamless');
+insert into categories (category) values ('Networked');
+insert into categories (category) values ('capability');
+insert into categories (category) values ('frame');
+insert into categories (category) values ('knowledge user');
+insert into categories (category) values ('Multi-lateral');
+insert into categories (category) values ('clear-thinking');
+insert into categories (category) values ('dynamic');
+insert into categories (category) values ('high-level');
+insert into categories (category) values ('migration');
+insert into categories (category) values ('Multi-layered');
+insert into categories (category) values ('application');
+insert into categories (category) values ('Expanded');
+insert into categories (category) values ('disintermediate');
+insert into categories (category) values ('throughput');
+insert into categories (category) values ('Centralized');
+insert into categories (category) values ('bifurcated');
+insert into categories (category) values ('Diverse');
+insert into categories (category) values ('6th generation');
+insert into categories (category) values ('Face to face');
+insert into categories (category) values ('alliance');
+insert into categories (category) values ('Progressive');
+insert into categories (category) values ('infrastructure');
+
+-- COMPANIES
 
 insert into companies (vat_num, name, description, location, country, email, phone) values ('7813587766', 'Skimia', 'eco-centric', 'Nedryhayliv', 'Ukraine', 'vvallow0@vimeo.com', '634-727-5555');
 insert into companies (vat_num, name, description, location, country, email, phone) values ('2610452667', 'Abata', 'Cross-group', 'Vrýses', 'Greece', 'rbreznovic1@stanford.edu', '663-113-4452');
@@ -97,40 +121,8 @@ insert into companies (vat_num, name, description, location, country, email, pho
 insert into companies (vat_num, name, description, location, country, email, phone) values ('3882785519', 'Zoonder', 'bandwidth-monitored', 'Meilisi', 'China', 'nlavielle1t@uol.com.br', '697-657-6693');
 insert into companies (vat_num, name, description, location, country, email, phone) values ('5717993455', 'Centidel', 'homogeneous', 'Caen', 'France', 'athompson1u@un.org', '344-602-2329');
 insert into companies (vat_num, name, description, location, country, email, phone) values ('0743869265', 'Dabvine', 'Monitored', 'Nepomuceno', 'Brazil', 'chanks1v@rediff.com', '146-580-9194');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('6277209841', 'Livetube', 'Upgradable', 'Buraen', 'Indonesia', 'ldowglass1w@sbwire.com', '278-505-9513');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('4549282045', 'Gigaclub', 'Intuitive', 'Pahonjean', 'Indonesia', 'jstuck1x@acquirethisname.com', '734-539-3259');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('0588518948', 'Gabtype', 'initiative', 'Hekou', 'China', 'bmenere1y@vimeo.com', '673-606-1066');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('2596181622', 'Quamba', 'process improvement', 'Vathýlakkos', 'Greece', 'tharberer1z@prweb.com', '504-362-3616');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('3975104457', 'Katz', 'tertiary', 'Springfield', 'United States', 'fclappison20@reverbnation.com', '417-738-5094');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('0070416079', 'Devify', 'real-time', 'Arcos', 'Portugal', 'bgouldbourn21@cdc.gov', '151-514-9122');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('8824111343', 'Meedoo', 'emulation', 'Atlanta', 'United States', 'kbirdwistle22@is.gd', '404-529-1065');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('8923930792', 'Vipe', 'migration', 'Bantiran', 'Indonesia', 'rpyford23@google.ru', '124-899-8445');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('0070045798', 'Lajo', 'Devolved', 'San Juan del Surutú', 'Bolivia', 'dkynnd24@hud.gov', '301-571-3053');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('6523199096', 'Roomm', 'policy', 'Bellavista', 'Mexico', 'sguyonnet25@nifty.com', '394-143-8244');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('6150292983', 'Youspan', '4th generation', 'Banjar Tegal Belodan', 'Indonesia', 'jcowern26@usgs.gov', '255-624-0965');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('7406911602', 'Thoughtstorm', 'bottom-line', 'Russkaya Polyana', 'Russia', 'chutcheson27@quantcast.com', '967-156-7049');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('4151286586', 'Skibox', 'Cloned', 'Huayuan', 'China', 'ssigfrid28@yahoo.co.jp', '967-691-9660');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('5388469034', 'Eidel', 'Assimilated', 'Nuga', 'Mongolia', 'scrowcher29@tamu.edu', '475-881-8327');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('1562717634', 'Miboo', 'Robust', 'Vishnyakovskiye Dachi', 'Russia', 'cfranzelini2a@eepurl.com', '293-783-9583');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('8595196745', 'Gigabox', 'standardization', 'Créteil', 'France', 'dboal2b@diigo.com', '565-835-9358');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('3357950707', 'Dabvine', 'tertiary', 'Labao', 'China', 'moverstreet2c@w3.org', '924-946-9248');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('5210083020', 'Meedoo', 'projection', 'Yangce', 'China', 'mpyffe2d@soundcloud.com', '794-491-4609');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('0585683123', 'Twitterwire', 'Object-based', 'Sernovodsk', 'Russia', 'dfeldberger2e@ed.gov', '428-160-9922');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('5046967782', 'Bubbletube', 'Adaptive', 'Saint-Denis', 'France', 'tchessel2f@phoca.cz', '730-995-9837');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('3215640686', 'Trilia', 'intermediate', 'Manolo Fortich', 'Philippines', 'thabard2g@guardian.co.uk', '155-580-7801');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('3866096321', 'Zoozzy', 'Mandatory', 'Sabanitas', 'Panama', 'lkemwal2h@tripadvisor.com', '845-799-7465');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('8048861542', 'Realpoint', 'optimal', 'Ivanteyevka', 'Russia', 'hmobbs2i@blogtalkradio.com', '961-842-9980');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('1385555688', 'Pixoboo', 'uniform', 'Dahe', 'China', 'kipplett2j@oaic.gov.au', '417-491-4605');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('0128507403', 'Zoombeat', 'Exclusive', 'Pinghu', 'China', 'mcowser2k@msu.edu', '197-695-9789');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('3976153036', 'Voonte', 'paradigm', 'Chunshui', 'China', 'bartrick2l@barnesandnoble.com', '723-861-7911');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('8946040513', 'Mybuzz', 'didactic', 'Lyon', 'France', 'qberntssen2m@cnbc.com', '885-758-9118');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('4469348864', 'Kwinu', 'contextually-based', 'Blimbing', 'Indonesia', 'rchung2n@msn.com', '345-624-7204');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('9620034120', 'Zoomzone', 'Compatible', 'Dongshangguan', 'China', 'bdubble2o@1und1.de', '513-328-2642');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('7422582448', 'Tambee', 'Profit-focused', 'Webuye', 'Kenya', 'hbrumble2p@hexun.com', '349-976-6720');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('9748903338', 'Centimia', 'Proactive', 'Mâcon', 'France', 'nelcott2q@mail.ru', '901-590-4035');
-insert into companies (vat_num, name, description, location, country, email, phone) values ('9209610210', 'Camimbo', 'methodical', 'Hengjian', 'China', 'tstaintonskinn2r@hostgator.com', '633-815-5271');
 
--- JOB OFFERINGS
+-- JOB OFFERS
 
 insert into job_offers (id, is_active, job_title, job_description, published_time, location, vacancies) values (1, 0, 'VP Accounting', 'Gastric contents in bronchus causing oth injury, subs encntr', '2021-09-28 13:44:07', 'Mont-de-Marsan', 3);
 insert into job_offers (id, is_active, job_title, job_description, published_time, location, vacancies) values (2, 0, 'Marketing Assistant', 'Puncture wound w foreign body of oth part of head, sequela', '2022-09-18 14:37:39', 'El Paso', 12);
@@ -232,3 +224,210 @@ insert into job_offers (id, is_active, job_title, job_description, published_tim
 insert into job_offers (id, is_active, job_title, job_description, published_time, location, vacancies) values (98, 1, 'Analog Circuit Design manager', 'Adult and child abuse, neglect and oth maltreat, confirmed', '2022-03-07 13:52:18', 'Stettler', 8);
 insert into job_offers (id, is_active, job_title, job_description, published_time, location, vacancies) values (99, 1, 'Teacher', 'Disp fx of prox phalanx of unsp fngr, subs for fx w nonunion', '2022-11-08 23:04:24', 'Sumuranyar', 11);
 insert into job_offers (id, is_active, job_title, job_description, published_time, location, vacancies) values (100, 1, 'Human Resources Manager', 'Toxic effect of cobra venom, accidental, init', '2022-08-27 14:41:38', 'Ludbreg', 4);
+
+-- COMPANIES - OFFERS
+
+UPDATE job_offers SET COMPANY_ID =66 WHERE id =1;
+UPDATE job_offers SET COMPANY_ID =16 WHERE id =2;
+UPDATE job_offers SET COMPANY_ID =34 WHERE id =3;
+UPDATE job_offers SET COMPANY_ID =64 WHERE id =4;
+UPDATE job_offers SET COMPANY_ID =65 WHERE id =5;
+UPDATE job_offers SET COMPANY_ID =34 WHERE id =6;
+UPDATE job_offers SET COMPANY_ID =67 WHERE id =7;
+UPDATE job_offers SET COMPANY_ID =14 WHERE id =8;
+UPDATE job_offers SET COMPANY_ID =18 WHERE id =9;
+UPDATE job_offers SET COMPANY_ID =20 WHERE id =10;
+UPDATE job_offers SET COMPANY_ID =65 WHERE id =11;
+UPDATE job_offers SET COMPANY_ID =20 WHERE id =12;
+UPDATE job_offers SET COMPANY_ID =61 WHERE id =13;
+UPDATE job_offers SET COMPANY_ID =38 WHERE id =14;
+UPDATE job_offers SET COMPANY_ID =11 WHERE id =15;
+UPDATE job_offers SET COMPANY_ID =11 WHERE id =16;
+UPDATE job_offers SET COMPANY_ID =17 WHERE id =17;
+UPDATE job_offers SET COMPANY_ID =21 WHERE id =18;
+UPDATE job_offers SET COMPANY_ID =8 WHERE id =19;
+UPDATE job_offers SET COMPANY_ID =15 WHERE id =20;
+UPDATE job_offers SET COMPANY_ID =31 WHERE id =21;
+UPDATE job_offers SET COMPANY_ID =39 WHERE id =22;
+UPDATE job_offers SET COMPANY_ID =7 WHERE id =23;
+UPDATE job_offers SET COMPANY_ID =38 WHERE id =24;
+UPDATE job_offers SET COMPANY_ID =54 WHERE id =25;
+UPDATE job_offers SET COMPANY_ID =3 WHERE id =26;
+UPDATE job_offers SET COMPANY_ID =23 WHERE id =27;
+UPDATE job_offers SET COMPANY_ID =41 WHERE id =28;
+UPDATE job_offers SET COMPANY_ID =33 WHERE id =29;
+UPDATE job_offers SET COMPANY_ID =40 WHERE id =30;
+UPDATE job_offers SET COMPANY_ID =3 WHERE id =31;
+UPDATE job_offers SET COMPANY_ID =62 WHERE id =32;
+UPDATE job_offers SET COMPANY_ID =48 WHERE id =33;
+UPDATE job_offers SET COMPANY_ID =40 WHERE id =34;
+UPDATE job_offers SET COMPANY_ID =26 WHERE id =35;
+UPDATE job_offers SET COMPANY_ID =35 WHERE id =36;
+UPDATE job_offers SET COMPANY_ID =50 WHERE id =37;
+UPDATE job_offers SET COMPANY_ID =26 WHERE id =38;
+UPDATE job_offers SET COMPANY_ID =26 WHERE id =39;
+UPDATE job_offers SET COMPANY_ID =60 WHERE id =40;
+UPDATE job_offers SET COMPANY_ID =15 WHERE id =41;
+UPDATE job_offers SET COMPANY_ID =57 WHERE id =42;
+UPDATE job_offers SET COMPANY_ID =40 WHERE id =43;
+UPDATE job_offers SET COMPANY_ID =6 WHERE id =44;
+UPDATE job_offers SET COMPANY_ID =61 WHERE id =45;
+UPDATE job_offers SET COMPANY_ID =12 WHERE id =46;
+UPDATE job_offers SET COMPANY_ID =20 WHERE id =47;
+UPDATE job_offers SET COMPANY_ID =65 WHERE id =48;
+UPDATE job_offers SET COMPANY_ID =33 WHERE id =49;
+UPDATE job_offers SET COMPANY_ID =25 WHERE id =50;
+UPDATE job_offers SET COMPANY_ID =3 WHERE id =51;
+UPDATE job_offers SET COMPANY_ID =62 WHERE id =52;
+UPDATE job_offers SET COMPANY_ID =35 WHERE id =53;
+UPDATE job_offers SET COMPANY_ID =50 WHERE id =54;
+UPDATE job_offers SET COMPANY_ID =61 WHERE id =55;
+UPDATE job_offers SET COMPANY_ID =26 WHERE id =56;
+UPDATE job_offers SET COMPANY_ID =34 WHERE id =57;
+UPDATE job_offers SET COMPANY_ID =8 WHERE id =58;
+UPDATE job_offers SET COMPANY_ID =8 WHERE id =59;
+UPDATE job_offers SET COMPANY_ID =45 WHERE id =60;
+UPDATE job_offers SET COMPANY_ID =26 WHERE id =61;
+UPDATE job_offers SET COMPANY_ID =24 WHERE id =62;
+UPDATE job_offers SET COMPANY_ID =8 WHERE id =63;
+UPDATE job_offers SET COMPANY_ID =40 WHERE id =64;
+UPDATE job_offers SET COMPANY_ID =24 WHERE id =65;
+UPDATE job_offers SET COMPANY_ID =61 WHERE id =66;
+UPDATE job_offers SET COMPANY_ID =41 WHERE id =67;
+UPDATE job_offers SET COMPANY_ID =57 WHERE id =68;
+UPDATE job_offers SET COMPANY_ID =21 WHERE id =69;
+UPDATE job_offers SET COMPANY_ID =47 WHERE id =70;
+UPDATE job_offers SET COMPANY_ID =64 WHERE id =71;
+UPDATE job_offers SET COMPANY_ID =57 WHERE id =72;
+UPDATE job_offers SET COMPANY_ID =61 WHERE id =73;
+UPDATE job_offers SET COMPANY_ID =29 WHERE id =74;
+UPDATE job_offers SET COMPANY_ID =3 WHERE id =75;
+UPDATE job_offers SET COMPANY_ID =38 WHERE id =76;
+UPDATE job_offers SET COMPANY_ID =34 WHERE id =77;
+UPDATE job_offers SET COMPANY_ID =38 WHERE id =78;
+UPDATE job_offers SET COMPANY_ID =60 WHERE id =79;
+UPDATE job_offers SET COMPANY_ID =17 WHERE id =80;
+UPDATE job_offers SET COMPANY_ID =27 WHERE id =81;
+UPDATE job_offers SET COMPANY_ID =52 WHERE id =82;
+UPDATE job_offers SET COMPANY_ID =52 WHERE id =83;
+UPDATE job_offers SET COMPANY_ID =3 WHERE id =84;
+UPDATE job_offers SET COMPANY_ID =65 WHERE id =85;
+UPDATE job_offers SET COMPANY_ID =5 WHERE id =86;
+UPDATE job_offers SET COMPANY_ID =52 WHERE id =87;
+UPDATE job_offers SET COMPANY_ID =62 WHERE id =88;
+UPDATE job_offers SET COMPANY_ID =50 WHERE id =89;
+UPDATE job_offers SET COMPANY_ID =12 WHERE id =90;
+UPDATE job_offers SET COMPANY_ID =28 WHERE id =91;
+UPDATE job_offers SET COMPANY_ID =54 WHERE id =92;
+UPDATE job_offers SET COMPANY_ID =49 WHERE id =93;
+UPDATE job_offers SET COMPANY_ID =49 WHERE id =94;
+UPDATE job_offers SET COMPANY_ID =34 WHERE id =95;
+UPDATE job_offers SET COMPANY_ID =56 WHERE id =96;
+UPDATE job_offers SET COMPANY_ID =22 WHERE id =97;
+UPDATE job_offers SET COMPANY_ID =7 WHERE id =98;
+UPDATE job_offers SET COMPANY_ID =26 WHERE id =99;
+UPDATE job_offers SET COMPANY_ID =44 WHERE id =100;
+
+-- CANDIDATES
+
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Georgianna', 'Clampett', 'gclampett0@timesonline.co.uk', 'F', '463 Twin Pines Parkway', 'Xifangcheng');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Salvatore', 'Nelthropp', 'snelthropp1@clickbank.net', 'M', '242 Moland Road', 'Tetebatu');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Guenna', 'Draisey', 'gdraisey2@is.gd', 'F', '38051 Rieder Park', 'Ústí nad Labem');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Derry', 'Annesley', 'dannesley3@posterous.com', 'M', '224 Corben Hill', 'Murowana Goślina');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Erskine', 'Bode', 'ebode4@microsoft.com', 'M', '0209 Kropf Point', 'El Retorno');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Fabio', 'Toupe', 'ftoupe5@kickstarter.com', 'M', '2458 Erie Junction', 'Gorobinci');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Lock', 'Cripin', 'lcripin6@umn.edu', 'M', '6 Little Fleur Alley', 'Dzüyl');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Kristoffer', 'Krolak', 'kkrolak7@statcounter.com', 'M', '290 Forster Terrace', 'Adolfo Ruiz Cortines');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Robbie', 'Vellender', 'rvellender8@posterous.com', 'M', '99 Granby Plaza', 'Serikbuya');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Everett', 'Wigfield', 'ewigfield9@youtu.be', 'M', '877 Carpenter Way', 'Tanshi');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Scarlett', 'Rodden', 'sroddena@ucoz.com', 'F', '14 Cascade Junction', 'Dallas');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Hermy', 'Cancutt', 'hcancuttb@google.com.br', 'M', '832 Westerfield Terrace', 'Donglai');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Jasmina', 'Bortoloni', 'jbortolonic@engadget.com', 'F', '39292 Graceland Lane', 'Nurmijärvi');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Devi', 'Hakey', 'dhakeyd@privacy.gov.au', 'F', '930 Sachtjen Street', 'Idvor');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Jeanette', 'Bedford', 'jbedforde@surveymonkey.com', 'F', '299 Homewood Terrace', 'Panji');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Hadria', 'Rodenborch', 'hrodenborchf@wiley.com', 'F', '7 Lerdahl Avenue', 'Shalushka');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Darcy', 'Messam', 'dmessamg@ow.ly', 'F', '28887 Fulton Junction', 'Costa Rica');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Lorne', 'Sackes', 'lsackesh@jigsy.com', 'M', '824 Manufacturers Avenue', 'Kushovë');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Rikki', 'Bisley', 'rbisleyi@yellowbook.com', 'F', '827 Larry Avenue', 'Washington');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Domini', 'Kalkofer', 'dkalkoferj@dyndns.org', 'F', '73736 Blaine Plaza', 'Ipoh');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Ilsa', 'McVey', 'imcveyk@bbb.org', 'F', '248 Burrows Drive', 'General Alvear');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Jordana', 'Gebbie', 'jgebbiel@sciencedirect.com', 'F', '24642 Eggendart Junction', 'Jieshou');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Yul', 'Rooney', 'yrooneym@washington.edu', 'M', '62745 Lukken Alley', 'Walakeri');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Zilvia', 'Pyner', 'zpynern@digg.com', 'F', '0 Fallview Junction', 'Jawand');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Allan', 'Kubes', 'akubeso@hatena.ne.jp', 'M', '73625 High Crossing Plaza', 'Katiola');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Domeniga', 'MacLucais', 'dmaclucaisp@businesswire.com', 'F', '18733 Claremont Junction', 'Uba');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Casi', 'Longdon', 'clongdonq@usa.gov', 'F', '5636 Clemons Alley', 'Charlottesville');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Tammie', 'Upex', 'tupexr@ask.com', 'M', '424 Moose Road', 'Vuka');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Tam', 'Nesey', 'tneseys@w3.org', 'M', '5 Almo Junction', 'Shanhe');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Antoine', 'Iapico', 'aiapicot@ed.gov', 'M', '75975 2nd Center', 'Cigenca');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Demetrius', 'Kivlin', 'dkivlinu@google.de', 'M', '25 School Parkway', 'Nacimiento');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Dalton', 'Lumber', 'dlumberv@aol.com', 'M', '91 Lindbergh Circle', 'Tiandiba');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Janice', 'Twist', 'jtwistw@bloglines.com', 'F', '6 Scott Point', 'Saint-Cloud');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Emili', 'Barde', 'ebardex@patch.com', 'F', '331 Harbort Court', 'Huyunxiang');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Rodolph', 'Clewlow', 'rclewlowy@loc.gov', 'M', '99 Clove Way', 'Vynohradivka');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Scottie', 'Passfield', 'spassfieldz@house.gov', 'M', '36 Clarendon Plaza', 'Santa Tecla');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Ania', 'Sprowell', 'asprowell10@prnewswire.com', 'F', '6 Di Loreto Hill', 'Heerlen');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Meridel', 'Stoade', 'mstoade11@prlog.org', 'F', '55064 Brentwood Pass', 'Nioro');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Courtnay', 'Lanham', 'clanham12@nationalgeographic.com', 'M', '19669 Menomonie Lane', 'Santo Tomas');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Kristi', 'Meredyth', 'kmeredyth13@state.tx.us', 'F', '35 Dixon Avenue', 'Al Hāshimīyah');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Glynn', 'Luebbert', 'gluebbert14@php.net', 'M', '6 Arrowood Street', 'Yên Lập');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Pincus', 'Vedeshkin', 'pvedeshkin15@nature.com', 'M', '7172 Texas Street', 'Jablonec nad Nisou');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Alex', 'Benoiton', 'abenoiton16@columbia.edu', 'F', '52018 Logan Point', 'Trondheim');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Bradan', 'Arnli', 'barnli17@unc.edu', 'M', '43993 Cody Point', 'Yunxi');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Darius', 'Passion', 'dpassion18@unicef.org', 'M', '2481 Paget Lane', 'Desakolot');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Phebe', 'Fieller', 'pfieller19@mysql.com', 'F', '6022 Montana Court', 'Dukuh Kaler');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Sebastiano', 'Beecker', 'sbeecker1a@bloomberg.com', 'M', '9 Nelson Place', 'Tādif');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Karylin', 'Walbrun', 'kwalbrun1b@mlb.com', 'F', '0 Meadow Valley Junction', 'Peliyagoda');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Alejoa', 'Colmore', 'acolmore1c@altervista.org', 'M', '26233 Nevada Court', 'Sedan');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Thadeus', 'Kees', 'tkees1d@state.tx.us', 'M', '334 Pennsylvania Hill', 'Laoqiao');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Tam', 'Dawtrey', 'tdawtrey1e@seattletimes.com', 'M', '2002 Pine View Way', 'Stare Miasto');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Goddard', 'Camblin', 'gcamblin1f@go.com', 'M', '0925 Northport Alley', 'Taguisa');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Orsola', 'Gosdin', 'ogosdin1g@abc.net.au', 'F', '7 Atwood Park', 'Sala');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Jimmy', 'Hanney', 'jhanney1h@live.com', 'M', '239 Jackson Road', 'Viejo Daan Banua');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Biddie', 'Lawday', 'blawday1i@myspace.com', 'F', '4730 Waubesa Terrace', 'Sirindhorn');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Bev', 'Wilprecht', 'bwilprecht1j@marriott.com', 'M', '8 Melrose Terrace', 'General La Madrid');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Elwin', 'Langford', 'elangford1k@freewebs.com', 'M', '8208 Linden Crossing', 'Zoumachang');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Mitchael', 'Warbey', 'mwarbey1l@techcrunch.com', 'M', '2 Clarendon Plaza', 'Zgornje Pirniče');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Roderigo', 'Jouannin', 'rjouannin1m@un.org', 'M', '4797 Sage Lane', 'Těšetice');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Allsun', 'Cullimore', 'acullimore1n@github.com', 'F', '56836 Eastwood Alley', 'Bishan');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Clemmie', 'Crowcombe', 'ccrowcombe1o@mtv.com', 'F', '4605 Blackbird Park', 'Portel');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Maura', 'Chesson', 'mchesson1p@wunderground.com', 'F', '6 Lake View Avenue', 'Dawangzhuang');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Bail', 'Dootson', 'bdootson1q@gmpg.org', 'M', '5 Maryland Avenue', 'Pokrovskoye');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Ros', 'Tregona', 'rtregona1r@purevolume.com', 'F', '98 Shasta Junction', 'Ekenäs');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Gayler', 'Girvin', 'ggirvin1s@blogger.com', 'M', '1 Shopko Court', 'Peroguarda');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Merwin', 'Bickerton', 'mbickerton1t@squidoo.com', 'M', '46974 Arapahoe Plaza', 'Tembladera');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Garek', 'Mathews', 'gmathews1u@booking.com', 'M', '946 Lakeland Road', 'Liuqu');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Valera', 'O''Cannon', 'vocannon1v@noaa.gov', 'F', '1226 Farmco Avenue', 'Miras');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Thorin', 'Farfull', 'tfarfull1w@narod.ru', 'M', '702 Village Circle', 'Lapuyan');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Alfreda', 'Balam', 'abalam1x@edublogs.org', 'F', '182 Homewood Street', 'Passos');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Vinny', 'MacKimm', 'vmackimm1y@bloglovin.com', 'M', '038 Mcguire Terrace', 'Bopu');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Dyana', 'Dearnley', 'ddearnley1z@irs.gov', 'F', '32153 Bay Place', 'Solnechnogorsk');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Clarissa', 'Butler', 'cbutler20@wired.com', 'F', '83 Sage Court', 'Piteå');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Merla', 'Masic', 'mmasic21@upenn.edu', 'F', '47 Cody Junction', 'Xiting');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Myron', 'Rickasse', 'mrickasse22@rediff.com', 'M', '89154 Del Mar Avenue', 'Kachkanar');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Dore', 'Gebuhr', 'dgebuhr23@thetimes.co.uk', 'M', '16938 Fairfield Plaza', 'Jiaohu');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Lamont', 'O''Doohaine', 'lodoohaine24@ca.gov', 'M', '86038 Glacier Hill Trail', 'Plagiári');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Alwin', 'Pilmore', 'apilmore25@bravesites.com', 'M', '2 Evergreen Circle', 'Kayanza');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Jud', 'Leehane', 'jleehane26@kickstarter.com', 'M', '789 Dakota Terrace', 'Su’ao');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Umeko', 'Warnes', 'uwarnes27@hostgator.com', 'F', '3 Canary Court', 'Ntobo');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Deloria', 'Grioli', 'dgrioli28@pen.io', 'F', '5 Cordelia Circle', 'Rtyně v Podkrkonoší');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Ellery', 'Chancellor', 'echancellor29@woothemes.com', 'M', '2533 Amoth Hill', 'Krajan Curahcotok');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Giffy', 'Garforth', 'ggarforth2a@gizmodo.com', 'M', '66 Fordem Center', 'Mimbaan Timur');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Tuckie', 'Restill', 'trestill2b@nsw.gov.au', 'M', '6489 Katie Avenue', 'Qingshuitang');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Eirena', 'Dempsey', 'edempsey2c@icq.com', 'F', '138 Heath Parkway', 'San Borja');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Foss', 'De la Yglesia', 'fdelayglesia2d@youku.com', 'M', '9366 Jay Drive', 'Xiaolong');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Madlin', 'Kleinert', 'mkleinert2e@mac.com', 'F', '66846 Hoard Place', 'Dístomo');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Immanuel', 'Philipart', 'iphilipart2f@plala.or.jp', 'M', '65751 Becker Place', 'Iracemápolis');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Paten', 'Callington', 'pcallington2g@opera.com', 'M', '02376 Blackbird Pass', 'Deskáti');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Johnath', 'Ledley', 'jledley2h@scribd.com', 'F', '148 Badeau Way', 'Luoshe');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Amabelle', 'Bligh', 'abligh2i@marriott.com', 'F', '5406 Hagan Pass', 'Ginir');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Hagan', 'Jakeman', 'hjakeman2j@sitemeter.com', 'M', '7 Union Court', 'Pingyao');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Meredithe', 'Tewkesberrie', 'mtewkesberrie2k@webmd.com', 'F', '38 Portage Trail', 'Bethel Town');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Dareen', 'Kirsopp', 'dkirsopp2l@fda.gov', 'F', '73375 Dexter Place', 'Niu');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Arleyne', 'Brolly', 'abrolly2m@deliciousdays.com', 'F', '00 Messerschmidt Road', 'Luntas');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Caterina', 'Oki', 'coki2n@stanford.edu', 'F', '9594 Katie Point', 'Beberon');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Nathan', 'Rodenborch', 'nrodenborch2o@stanford.edu', 'M', '9 Nelson Circle', 'Atakpamé');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Emma', 'Swiffen', 'eswiffen2p@jugem.jp', 'F', '1 5th Junction', 'Aksu');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (1, 'Mayer', 'Rraundl', 'mrraundl2q@typepad.com', 'M', '0879 Morrow Drive', 'Ozurgeti');
+insert into candidates (is_open_to_work, first_name, last_name, email, gender, street, location) values (0, 'Adrien', 'Jacob', 'ajacob2r@irs.gov', 'M', '06889 Weeping Birch Parkway', 'Domartang');
+

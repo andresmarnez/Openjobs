@@ -1,9 +1,7 @@
 package com.andresmarnez.openjobs.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -23,9 +21,21 @@ public class Category {
 	@Id
 	private String category;
 
-	@ManyToMany
+	@ManyToMany(fetch = FetchType.LAZY,
+			cascade = {
+					CascadeType.PERSIST,
+					CascadeType.MERGE
+			},
+			mappedBy = "categories")
+	@JsonIgnore
 	private List<Candidate> candidate_tags = new ArrayList<>();
 
-	@ManyToMany
+	@ManyToMany(fetch = FetchType.LAZY,
+			cascade = {
+					CascadeType.PERSIST,
+					CascadeType.MERGE
+			},
+			mappedBy = "tags")
+	@JsonIgnore
 	private List<JobOffer> offer_tags = new ArrayList<>();
 }
