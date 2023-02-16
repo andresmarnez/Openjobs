@@ -14,6 +14,8 @@ import java.util.Optional;
 /**
  * This class is the main class for the JSON API.
  */
+
+@CrossOrigin
 @RestController
 @RequestMapping("/")
 public class OpenJobsController {
@@ -31,6 +33,5 @@ public class OpenJobsController {
 	public List<Company> getAllCompanies(){
 		return companyService.getAllCompanies();
 	}
-
 
 }

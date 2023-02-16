@@ -34,6 +34,7 @@ public class JobOffer {
 	private String jobDescription;
 
 	@Column(nullable = false)
+	@JsonFormat(pattern="E, dd MMM YY")
 	private LocalDateTime publishedTime;
 
 	@Column(nullable = false)
