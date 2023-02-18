@@ -25,7 +25,7 @@ public class OfferController {
 		this.jobOfferService = jobOfferService;
 	}
 
-	@Operation(summary = "Get a list of the active jop offers.")
+	@Operation(summary = "Get a list of the jop offers.")
 	@ApiResponses(value = {
 			@ApiResponse(responseCode = "200", description = "Found the offers.",
 					content = { @Content(mediaType = "application/json",
@@ -34,9 +34,23 @@ public class OfferController {
 					content = @Content),
 			@ApiResponse(responseCode = "404", description = "Offers not found",
 					content = @Content) })
-	@GetMapping("/")
+	@GetMapping("")
 	public List<JobOffer> getAllOffers(){
-		return jobOfferService.findActiveOffers();
+		return jobOfferService.findAll();
+	}
+
+	@Operation(summary = "Gets the an specific job offer.")
+	@GetMapping("/{id}")
+	public JobOffer getJobOffer(@PathVariable("id") long id){return jobOfferService.findById(id);}
+
+	@Operation(summary = "Search within all active offers.")
+	@GetMapping("/active")
+	public List<JobOffer> getActiveOffers(){return jobOfferService.findActiveOffers();}
+
+	@Operation(summary = "Stores all active joboffers in a fila and returns the path.")
+	@GetMapping("/active/file-json")
+	public String getJsonFile(){
+		return jobOfferService.getJsonFile();
 	}
 
 	//@Request(defaultValue="ASC", required = false) Sort.Directon direction
@@ -56,5 +70,13 @@ public class OfferController {
 	public ResponseEntity<String> addOffer(@PathVariable(value = "id") Long id, @RequestBody JobOffer offer){
 		return (jobOfferService.addOffer(id, offer)) ? ResponseEntity.status(HttpStatus.OK).body("JobOffer added.") :
 				ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body("JobOffer NOT added.");
+	}
+
+	@Operation(summary = "Adds a new offer to a company")
+	@PutMapping("/update/{id}")
+	public ResponseEntity<String> updateOffer(@PathVariable("id") Long id, @RequestBody JobOffer offer) {
+
+		return (jobOfferService.updateOffer(id, offer)) ? ResponseEntity.status(HttpStatus.OK).body("JobOffer updated.") :
+				ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body("JobOffer NOT updated.");
 	}
 }

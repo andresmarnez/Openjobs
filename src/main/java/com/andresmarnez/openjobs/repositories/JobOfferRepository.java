@@ -9,13 +9,15 @@ import java.util.List;
 
 public interface JobOfferRepository extends JpaRepository<JobOffer, Long> {
 
-	List<JobOffer> findAllByIsActive(boolean isActive);
+	List<JobOffer> findAllByIsActiveTrue();
 
-	List<JobOffer> findAllByIsActive(boolean isActive, Pageable pageable);
+	List<JobOffer> findAllByIsActiveFalse();
 
-	List<JobOffer> findAllByIsActive(boolean isActive, Sort sort);
+	List<JobOffer> findAllByIsActiveTrue(Pageable pageable);
 
-	JobOffer save(JobOffer offer);
+	List<JobOffer> findAllByIsActiveFalse(Pageable pageable);
+
+	List<JobOffer> findAll();
 
 	boolean existsById(Long id);
 }

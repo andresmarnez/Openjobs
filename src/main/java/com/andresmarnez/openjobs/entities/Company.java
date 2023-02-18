@@ -47,7 +47,12 @@ public class Company {
 	@Column(nullable = false)
 	private String phone;
 
-	@OneToMany(fetch = FetchType.EAGER, mappedBy = "company")
+	@OneToMany(fetch = FetchType.EAGER,
+			mappedBy = "company",
+			cascade = {
+				CascadeType.REMOVE, CascadeType.MERGE
+			}
+	)
 	@Column(unique = true)
 	private List<JobOffer> offers =  new ArrayList<>();
 

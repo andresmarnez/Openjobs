@@ -10,5 +10,5 @@ public interface CompanyRepository extends JpaRepository<Company, Long> {
 
 	boolean existsById(Long id);
 
-
+	void deleteById(Long id);
 }

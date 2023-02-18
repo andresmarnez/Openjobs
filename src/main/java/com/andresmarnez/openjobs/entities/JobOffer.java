@@ -21,6 +21,7 @@ import java.util.List;
 public class JobOffer {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	@JsonIgnore
@@ -33,9 +34,8 @@ public class JobOffer {
 	@Column(nullable = false)
 	private String jobDescription;
 
-	@Column(nullable = false)
 	@JsonFormat(pattern="E, dd MMM YY")
-	private LocalDateTime publishedTime;
+	private LocalDateTime publishedTime = LocalDateTime.now();
 
 	@Column(nullable = false)
 	private String location;
@@ -59,6 +59,7 @@ public class JobOffer {
 
 	@ManyToMany(fetch = FetchType.LAZY,
 			cascade = {
+					CascadeType.PERSIST,
 					CascadeType.PERSIST,
 					CascadeType.MERGE
 			})

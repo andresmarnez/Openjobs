@@ -6,10 +6,11 @@ import com.andresmarnez.openjobs.service.JobOfferService;
 
 import io.swagger.v3.oas.annotations.Operation;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 /**
  * This class is the main class for the JSON API.
@@ -32,6 +33,13 @@ public class OpenJobsController {
 	@GetMapping("/companies")
 	public List<Company> getAllCompanies(){
 		return companyService.getAllCompanies();
+	}
+
+	@Operation(summary = "Removes a company based on the id provided this will also delete all Offers that Companty has.")
+	@DeleteMapping("/remove/{id}")
+	public ResponseEntity<String> removeCompany(@PathVariable("id") long id){
+		return (companyService.removeCompanyById(id)) ? ResponseEntity.status(HttpStatus.OK).body("Company " + id + " removed.") :
+				ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body("Company NOT removed.");
 	}
 
 }
