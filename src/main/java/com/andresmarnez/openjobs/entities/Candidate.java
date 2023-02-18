@@ -42,11 +42,11 @@ public class Candidate {
 	@ManyToMany(fetch = FetchType.LAZY,
 			cascade = {
 					CascadeType.PERSIST,
-					CascadeType.MERGE
+					CascadeType.MERGE,
 			})
 	@JoinTable(name = "candidate_category",
 			joinColumns = { @JoinColumn(name = "candidates_id") },
-			inverseJoinColumns = { @JoinColumn(name = "category_category") })
+			inverseJoinColumns = { @JoinColumn(name = "category_category")})
 	private List<Category> categories = new ArrayList<>();
 
 	@ManyToMany

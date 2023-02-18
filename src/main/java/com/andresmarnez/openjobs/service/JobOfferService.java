@@ -10,13 +10,10 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-
-import javax.swing.text.html.Option;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.time.LocalDate;
-import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 
@@ -42,7 +39,7 @@ public class JobOfferService {
 	public List<JobOffer> findPaginatedOffers(int page, int size, String sortBy, Optional<Boolean> des) {
 
 		Pageable pageable;
-		String sortStr = "";
+		String sortStr;
 
 		if (sortBy == null) sortBy = "";
 
@@ -72,7 +69,8 @@ public class JobOfferService {
 		if (offer == null || company.isEmpty()) return false;
 
 		offer.setCompany(company.get());
-		return  (jobOfferRepository.save(offer) != null);
+		jobOfferRepository.save(offer);
+		return true;
 	}
 
 	public boolean updateOffer(long company_id, JobOffer offer){
@@ -117,8 +115,6 @@ public class JobOfferService {
 			offerArray.put(offerJSON);
 		}
 
-
-
 		obj.put("offers", offerArray);
 
 		System.out.println(obj.toString(4));
@@ -133,9 +129,6 @@ public class JobOfferService {
 		} catch (IOException e){
 			return "NOT CREATED";
 		}
-
-
-
 		return fileName;
 	}
 }
