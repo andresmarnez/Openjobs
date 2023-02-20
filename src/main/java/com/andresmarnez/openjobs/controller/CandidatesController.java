@@ -24,6 +24,12 @@ public class CandidatesController {
 		return candidateService.getAllCandidates();
 	}
 
+	@Operation(summary = "Returns the candidate with the id.")
+	@GetMapping("/{id}")
+	public Candidate getCandidate(@PathVariable("id") Long id){
+		return  candidateService.getCandidateById(id);
+	}
+
 	@Operation(summary = "Returns all candidates open to work.")
 	@GetMapping("/open-for-work")
 	public List<Candidate> getAllCandidatesOpen() {

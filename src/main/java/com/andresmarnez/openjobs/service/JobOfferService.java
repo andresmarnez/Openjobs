@@ -41,17 +41,19 @@ public class JobOfferService {
 		Pageable pageable;
 		String sortStr;
 
+		if (page <= 0 || size <= 0) return null;
 		if (sortBy == null) sortBy = "";
 
 		switch (sortBy) {
 			case "title" -> sortStr = "jobTitle";
-			case "descrp" -> sortStr = "jobDescription";
+			case "description" -> sortStr = "jobDescription";
 			case "published" -> sortStr = "publishedTime";
 			case "location" -> sortStr = "location";
 			case "vacancies" -> sortStr = "vacancies";
 			case "company" -> sortStr = "company";
 			default -> {
-				pageable = PageRequest.of(page, size);
+				//starts on 1 for users 0 for internal
+				pageable = PageRequest.of(page - 1, size);
 				return jobOfferRepository.findAllByIsActiveTrue(pageable);
 			}
 		}
@@ -130,5 +132,9 @@ public class JobOfferService {
 			return "NOT CREATED";
 		}
 		return fileName;
+	}
+
+	public List<JobOffer> searchByTitle(String text) {
+		return jobOfferRepository.findByIsActiveTrueAndJobTitleContainingIgnoreCase(text);
 	}
 }

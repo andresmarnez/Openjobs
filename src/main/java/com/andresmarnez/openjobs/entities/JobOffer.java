@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.*;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,7 +35,7 @@ public class JobOffer {
 	private String jobDescription;
 
 	@JsonFormat(pattern="E, dd MMM YY")
-	private LocalDateTime publishedTime = LocalDateTime.now();
+	private LocalDate publishedTime = LocalDate.now();
 
 	@Column(nullable = false)
 	private String location;

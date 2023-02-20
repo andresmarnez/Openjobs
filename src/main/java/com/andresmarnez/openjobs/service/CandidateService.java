@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CandidateService {
@@ -16,6 +17,10 @@ public class CandidateService {
 	public CandidateService(CandidateRepository candidateRepository) {
 		this.candidateRepository = candidateRepository;
 	}
+
+	public Candidate getCandidateById(Long id) {
+		Optional<Candidate> candidate;
+		return ((candidate = candidateRepository.findById(id)).isPresent() ) ? candidate.get(): null; }
 
 	public List<Candidate> getAllCandidates(){
 		return candidateRepository.findAll();

@@ -20,6 +20,7 @@ public class StatisticsService {
 		this.companyRepository = companyRepository;
 	}
 
+
 	public Map<String, Long> getSummaryCountries() {
 		Map<String, Long> map = new HashMap<>();
 		Set<String> compCountries = companyRepository.getCountries();

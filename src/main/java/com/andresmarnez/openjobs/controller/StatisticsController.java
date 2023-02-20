@@ -20,11 +20,9 @@ public class StatisticsController {
 		this.service = service;
 	}
 
-
-	@Operation(description = "Returns the number of companies per country.")
+	@Operation(summary = "Returns the number of companies per country.")
 	@GetMapping("/country")
 	public Map<String, Long> summaryCountries(){
 		return service.getSummaryCountries();
 	}
-
 }

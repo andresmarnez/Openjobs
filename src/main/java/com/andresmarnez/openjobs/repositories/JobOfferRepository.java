@@ -22,4 +22,10 @@ public interface JobOfferRepository extends JpaRepository<JobOffer, Long> {
 	List<JobOffer> findAll();
 
 	boolean existsById(Long id);
+
+	List<JobOffer> findByIsActiveTrueAndJobTitleContainingIgnoreCase(String text);
+
+	List<JobOffer> findByCompanyIdOrderByPublishedTime(Long company_id);
+
+	List<JobOffer> findByCompanyId(Long company_id);
 }
