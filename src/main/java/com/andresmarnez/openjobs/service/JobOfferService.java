@@ -80,8 +80,8 @@ public class JobOfferService {
 		if (offer == null || company.isEmpty()) return false;
 
 		offer.setCompany(company.get());
-		jobOfferRepository.save(offer);
-		return true;
+		Integer res = jobOfferRepository.update(offer.getJobDescription(), offer.getJobTitle(), offer.getLocation(), offer.getId());
+		return res != null && res != 0;
 	}
 
 	public JobOffer findById(long id){
@@ -136,5 +136,9 @@ public class JobOfferService {
 
 	public List<JobOffer> searchByTitle(String text) {
 		return jobOfferRepository.findByIsActiveTrueAndJobTitleContainingIgnoreCase(text);
+	}
+
+	public void removeById(Long id) {
+		jobOfferRepository.deleteById(id);
 	}
 }

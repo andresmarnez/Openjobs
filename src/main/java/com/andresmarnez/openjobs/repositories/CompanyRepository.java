@@ -10,7 +10,7 @@ public interface CompanyRepository extends JpaRepository<Company, Long> {
 
 	Company save(Company company);
 
-	@Query(value = "select distinct c.COUNTRY from COMPANIES c", nativeQuery = true)
+	@Query (value = "select distinct c.COUNTRY from COMPANIES c", nativeQuery = true)
 	Set<String> getCountries();
 
 	@Query(value = "select count(*) from COMPANIES c WHERE c.COUNTRY like ?1", nativeQuery = true)
@@ -19,6 +19,4 @@ public interface CompanyRepository extends JpaRepository<Company, Long> {
 	boolean existsById(Long id);
 
 	void deleteById(Long id);
-
-
 }

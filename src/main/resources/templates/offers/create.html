@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <title>OpenJobs | Create Offer</title>
+    </head>
+    <body>
+        <div class="container my-2">
+            <div class="card" th:each="offer:${offers}">
+                <div class="card-body">
+                    <h5 class="card-title" th:text="${offer.jobTitle}"></h5>
+                    <h6 class="card-title" th:text="${this.props.publishedTime}"></h6>
+                    <p class="card-text" th:text="$Location: {this.props.location}"></p>
+                    <p class="card-text" th:text="${this.props.jobDescription}"></p>
+                    <p class="card-text" th:text="Vacancies: ${this.props.vacancies}"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

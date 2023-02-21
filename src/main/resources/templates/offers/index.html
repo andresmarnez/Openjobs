@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <title>OpenJobs | Offers</title>
+</head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="/web/">
+                <img th:src="@{../../images/LOGO.PNG}" style="width:100px;" src="../static/images/LOGO.PNG" alt="Logo of OpenJobs"/>
+            </a>
+
+            <form th:action="@{'/web/search'}" class="form-inline my-2 my-lg-0">
+                <input name="search" class="form-control mr-sm-2" type="search" placeholder="Search"/>
+                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">&#128269;</button>
+            </form>
+        </nav>
+
+        <h4 th:text="${search}" style="margin: 20px"/>
+        <div class="container my-2" style="display: flex; flex-wrap: wrap;">
+            <div th:each="offer:${offers}" th:onclick="location.href='edit/[[${offer.id}]]'" class="card"  style="width:40%; margin:20px;" >
+                <div class="card-body">
+                    <h5 class="card-title" th:text="${offer.jobTitle}"></h5>
+                    <h6 class="card-title" th:text="${offer.publishedTime}"></h6>
+                    <p class="card-text" th:text="${offer.location}"></p>
+                    <p class="card-text" th:text="${offer.jobDescription}"></p>
+                    <p class="card-text" th:text="${offer.vacancies}"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
