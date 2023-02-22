@@ -33,7 +33,7 @@ public class JobOfferService {
 	}
 
 	public List<JobOffer> findActiveOffers() {
-		return jobOfferRepository.findAllByIsActiveTrue();
+		return jobOfferRepository.findAllByIsActiveTrueOrderByPublishedTimeDesc();
 	}
 
 	public List<JobOffer> findPaginatedOffers(int page, int size, String sortBy, Optional<Boolean> des) {
@@ -54,7 +54,7 @@ public class JobOfferService {
 			default -> {
 				//starts on 1 for users 0 for internal
 				pageable = PageRequest.of(page - 1, size);
-				return jobOfferRepository.findAllByIsActiveTrue(pageable);
+				return jobOfferRepository.findAllByIsActiveTrueOrderByPublishedTimeDesc(pageable);
 			}
 		}
 		Sort sort = Sort.by(
@@ -63,14 +63,11 @@ public class JobOfferService {
 
 
 		pageable = PageRequest.of(page, size, sort);
-		return jobOfferRepository.findAllByIsActiveTrue(pageable);
+		return jobOfferRepository.findAllByIsActiveTrueOrderByPublishedTimeDesc(pageable);
 	}
 
-	public boolean addOffer(long company_id, JobOffer offer){
-		Optional<Company> company = companyRepository.findById(company_id);
-		if (offer == null || company.isEmpty()) return false;
-
-		offer.setCompany(company.get());
+	public boolean addOffer(JobOffer offer){
+		if (offer == null) return false;
 		jobOfferRepository.save(offer);
 		return true;
 	}
@@ -91,12 +88,12 @@ public class JobOfferService {
 
 	public String getJsonFile() {
 
-		List<JobOffer> jobOffers = jobOfferRepository.findAllByIsActiveTrue();
+		List<JobOffer> jobOffers = jobOfferRepository.findAllByIsActiveTrueOrderByPublishedTimeDesc();
 
 		JSONObject obj = new JSONObject();
 		JSONArray offerArray = new JSONArray();
 
-		List<JobOffer> offers = jobOfferRepository.findAllByIsActiveTrue();
+		List<JobOffer> offers = jobOfferRepository.findAllByIsActiveTrueOrderByPublishedTimeDesc();
 
 		for (JobOffer offer : offers) {
 			JSONObject offerJSON = new JSONObject();

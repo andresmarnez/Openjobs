@@ -10,7 +10,9 @@
             <a class="navbar-brand" href="/web/">
                 <img th:src="@{../../images/LOGO.PNG}" style="width:100px;" alt="Logo of OpenJobs"/>
             </a>
-            <a href="#" class="btn btn-primary">New Offer</a>
+
+            <a th:href="@{'/web/new'}" class="btn btn-outline-primary">New Offer</a>
+
             <form th:action="@{'/web/search'}" class="form-inline my-2 my-lg-0">
                 <input name="search" class="form-control mr-sm-2" type="search" placeholder="Search"/>
                 <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">&#128269;</button>

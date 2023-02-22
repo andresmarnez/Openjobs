@@ -74,7 +74,7 @@ public class OfferController {
 	@Operation(summary = "Adds a new offer to a company")
 	@PostMapping("/add/{id}")
 	public ResponseEntity<String> addOffer(@PathVariable(value = "id") Long id, @RequestBody JobOffer offer){
-		return (jobOfferService.addOffer(id, offer)) ? ResponseEntity.status(HttpStatus.OK).body("JobOffer added.") :
+		return (jobOfferService.addOffer(offer)) ? ResponseEntity.status(HttpStatus.OK).body("JobOffer added.") :
 				ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body("JobOffer NOT added.");
 	}
 

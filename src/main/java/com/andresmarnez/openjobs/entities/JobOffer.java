@@ -25,7 +25,6 @@ public class JobOffer {
 	private Long id;
 
 	@JsonIgnore
-	@Column(nullable = false)
 	private Boolean isActive = true;
 
 	@Column(nullable = false)
@@ -67,4 +66,13 @@ public class JobOffer {
 			joinColumns = { @JoinColumn(name = "job_offers_id") },
 			inverseJoinColumns = { @JoinColumn(name = "candidates_id") })
 	private List<Candidate> candidates = new ArrayList<>();
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		JobOffer jobOffer = (JobOffer) o;
+		return id.equals(jobOffer.id);
+	}
+
 }

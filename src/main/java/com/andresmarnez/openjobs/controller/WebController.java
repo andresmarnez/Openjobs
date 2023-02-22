@@ -1,6 +1,7 @@
 package com.andresmarnez.openjobs.controller;
 
 import com.andresmarnez.openjobs.entities.JobOffer;
+import com.andresmarnez.openjobs.service.CompanyService;
 import com.andresmarnez.openjobs.service.JobOfferService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,9 +12,11 @@ import org.springframework.web.bind.annotation.*;
 public class WebController {
 
 	private final JobOfferService jobOfferService;
+	private final CompanyService companyService;
 
-	public WebController(JobOfferService jobOfferService) {
+	public WebController(JobOfferService jobOfferService, CompanyService companyService) {
 		this.jobOfferService = jobOfferService;
+		this.companyService = companyService;
 	}
 
 	@GetMapping("/")
@@ -37,15 +40,24 @@ public class WebController {
 		return "offers/update.html";
 	}
 
+	@GetMapping("/new")
+	public String getCreationFrom(Model model){
+		JobOffer offer =  new JobOffer();
+		offer.setCompany(companyService.getCompany(1L));
+		model.addAttribute("offer",offer);
+		return "offers/create.html";
+	}
+
 	@PostMapping("/edit/")
 	public String postEditedOffer(@ModelAttribute("offer") JobOffer offer){
 		jobOfferService.updateOffer(offer.getId(),offer);
 		return "redirect:/web/";
 	}
 
-	@PostMapping("/add/{id}")
-	public String createOffer(@PathVariable("id") Long id, @ModelAttribute("offer") JobOffer offer){
-		jobOfferService.addOffer(id,offer);
+	@PostMapping("/new/")
+	public String createOffer(@ModelAttribute("offer") JobOffer offer){
+		offer.setCompany(companyService.getCompany(1L));
+		jobOfferService.addOffer(offer);
 		return "redirect:/web/";
 	}
 

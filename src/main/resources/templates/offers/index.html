@@ -11,6 +11,8 @@
                 <img th:src="@{../../images/LOGO.PNG}" style="width:100px;" src="../static/images/LOGO.PNG" alt="Logo of OpenJobs"/>
             </a>
 
+            <a th:href="@{'/web/new'}" class="btn btn-outline-primary">New Offer</a>
+
             <form th:action="@{'/web/search'}" class="form-inline my-2 my-lg-0">
                 <input name="search" class="form-control mr-sm-2" type="search" placeholder="Search"/>
                 <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">&#128269;</button>
@@ -25,7 +27,7 @@
                     <h6 class="card-title" th:text="${offer.publishedTime}"></h6>
                     <p class="card-text" th:text="${offer.location}"></p>
                     <p class="card-text" th:text="${offer.jobDescription}"></p>
-                    <p class="card-text" th:text="${offer.vacancies}"></p>
+                    <p class="card-text" th:text="'Vacancies: ' +${offer.vacancies}"></p>
                 </div>
             </div>
         </div>

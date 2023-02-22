@@ -8,15 +8,14 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.Set;
 
 public interface JobOfferRepository extends JpaRepository<JobOffer, Long> {
 
-	List<JobOffer> findAllByIsActiveTrue();
+	List<JobOffer> findAllByIsActiveTrueOrderByPublishedTimeDesc();
 
 	List<JobOffer> findAllByIsActiveFalse();
 
-	List<JobOffer> findAllByIsActiveTrue(Pageable pageable);
+	List<JobOffer> findAllByIsActiveTrueOrderByPublishedTimeDesc(Pageable pageable);
 
 	List<JobOffer> findAllByIsActiveFalse(Pageable pageable);
 

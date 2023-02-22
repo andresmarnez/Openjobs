@@ -6,16 +6,46 @@
         <title>OpenJobs | Create Offer</title>
     </head>
     <body>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="/web/">
+                <img th:src="@{../../images/LOGO.PNG}" style="width:100px;" alt="Logo of OpenJobs"/>
+            </a>
+
+            <a th:href="@{'/web/new'}" class="btn btn-outline-primary">New Offer</a>
+
+            <form th:action="@{'/web/search'}" class="form-inline my-2 my-lg-0">
+                <input name="search" class="form-control mr-sm-2" type="search" placeholder="Search"/>
+                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">&#128269;</button>
+            </form>
+        </nav>
+
         <div class="container my-2">
-            <div class="card" th:each="offer:${offers}">
-                <div class="card-body">
-                    <h5 class="card-title" th:text="${offer.jobTitle}"></h5>
-                    <h6 class="card-title" th:text="${this.props.publishedTime}"></h6>
-                    <p class="card-text" th:text="$Location: {this.props.location}"></p>
-                    <p class="card-text" th:text="${this.props.jobDescription}"></p>
-                    <p class="card-text" th:text="Vacancies: ${this.props.vacancies}"></p>
+            <form method="post" th:action="@{/web/new/}" th:object="${offer}" style="width:90%;">
+                <div>
+                    <label class="card-title">Title:</label>
+                    <input type="text" class="form-control" th:field="*{jobTitle}">
                 </div>
-            </div>
+                <div class="form-group">
+                    <label>Location:</label>
+                    <input type="text" class="form-control" th:field="*{location}">
+                </div>
+                <div class="form-group">
+                    <label>Vacancies:</label>
+                    <input type="number" class="form-control" th:field="*{vacancies}">
+                </div>
+                <div class="form-group">
+                    <label>Description:</label>
+                    <textarea class="form-control" th:field="*{jobDescription}" rows="5"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="card-title">Company:</label>
+                    <input class="form-control" type="text" th:placeholder="${offer.company.name}" readonly>
+                </div>
+
+                <button class="btn btn-primary" type="submit">CREATE</button>
+            </form>
+
         </div>
     </body>
 </html>
