@@ -33,6 +33,12 @@ java -jar build/libs/openjobs-api-1.0.0.jar
 
 The API will be available at http://localhost:8081.
 
+## Authors
+
+Andrés Sánchez Martínez
+
+LinkedIn [@andresmarnez](https://www.linkedin.com/in/andresmarnez/)
+
 ## Usage
 
 You can interact with the OpenJobs API using HTTP requests. The API supports JSON as the default format for both request and response bodies.
