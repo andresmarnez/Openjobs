@@ -71,14 +71,14 @@ public class OfferController {
 		}
 	}
 
-	@Operation(summary = "Adds a new offer to a company")
-	@PostMapping("/add/{id}")
-	public ResponseEntity<String> addOffer(@PathVariable(value = "id") Long id, @RequestBody JobOffer offer){
+	@Operation(summary = "Adds a new offer.")
+	@PostMapping("/add/")
+	public ResponseEntity<String> addOffer(@RequestBody JobOffer offer){
 		return (jobOfferService.addOffer(offer)) ? ResponseEntity.status(HttpStatus.OK).body("JobOffer added.") :
 				ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body("JobOffer NOT added.");
 	}
 
-	@Operation(summary = "Adds a new offer to a company")
+	@Operation(summary = "Updates an offer.")
 	@PutMapping("/update/{id}")
 	public ResponseEntity<String> updateOffer(@PathVariable("id") Long id, @RequestBody JobOffer offer) {
 

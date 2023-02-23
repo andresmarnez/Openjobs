@@ -36,7 +36,7 @@ public class CandidatesController {
 		return candidateService.getAllCandidatesOpenTrue();
 	}
 
-	@Operation(summary = "Returns all candidates intereted in a category.")
+	@Operation(summary = "Returns all candidates interested in a category.")
 	@GetMapping("/interest")
 	public List<Candidate> getCandidatesInterested(@RequestParam("category") String category){
 		return  candidateService.getAllCandidatesInterested(category);
